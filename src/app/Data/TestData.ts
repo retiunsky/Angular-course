@@ -16,14 +16,14 @@ export class TestData {
     {id: 8, title: 'Гаджеты'},
     {id: 9, title: 'Здоровье'},
     {id: 10, title: 'Автомобиль'},
-    {id: 11, title: 'Ремонт'}
+    {id: 11, title: 'Ремонт'},
   ];
 
   static priorities: Priority[] = [
     {id: 1, title: 'Низкий', color: '#e5e5e5'},
     {id: 2, title: 'Средний', color: '#85D1B2'},
     {id: 3, title: 'Высокий', color: '#F1828D'},
-    {id: 4, title: 'Очень срочно', color: '#F1128D'}
+    {id: 4, title: 'Очень срочно', color: '#F1128D'},
   ];
   // не забыть - индексация приоритетов и категорий начинается с нуля
   static tasks: Task[] = [
