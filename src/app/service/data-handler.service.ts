@@ -7,6 +7,7 @@ import {Task} from '../model/Task';
   providedIn: 'root'
 })
 export class DataHandlerService {
+  private task: any;
 
   constructor() {
   }
@@ -17,7 +18,10 @@ export class DataHandlerService {
 
   getTasks(): Task[] {
     return TestData.tasks;
-
   }
 
+  getTasksByCategory(category: Category): Task[] {
+    const tasks = TestData.tasks.filter(value => this.task.category === category);
+    return tasks;
+  }
 }
